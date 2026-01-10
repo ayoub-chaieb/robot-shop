@@ -161,8 +161,8 @@ services:
       timeout: 10s
       retries: 3
     environment:
-      INSTANA_EUM_KEY: zgcgpTOdQEmDvHNmJdhoxw
-      INSTANA_EUM_REPORTING_URL: https://eum-blue-saas.instana.io
+      INSTANA_EUM_KEY: ${INSTANA_EUM_KEY}
+      INSTANA_EUM_REPORTING_URL: $(INSTANA_EUM_REPORTING_URL)
     logging:
       <<: *logging
 
